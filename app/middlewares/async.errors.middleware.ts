@@ -3,7 +3,7 @@ import { NextFunction, Request, Response, Express } from 'express';
 
 export default (error: Error, req: Request, res: Response, next: NextFunction) => {
   const data = {
-    status: false,
+    success: false,
     message: `Something failed:... ${error.message}`
   };
 

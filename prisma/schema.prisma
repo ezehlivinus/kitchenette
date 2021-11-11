@@ -29,7 +29,7 @@ model Menu {
   title  String   @db.VarChar(255)
   description String?  @db.Text
   restaurant   Restaurant   @relation(fields: [restaurantId], references: [id])
-  restaurantId Int     @unique
+  restaurantId Int     @db.Integer
   items  Item[]
 }
 
@@ -37,7 +37,7 @@ model Item {
   id     Int     @id @default(autoincrement())
   bio    String?
   menu   Menu    @relation(fields: [menuId], references: [id])
-  menuId Int     @unique
+  menuId Int     @db.Integer
 }
 
 enum Role {
