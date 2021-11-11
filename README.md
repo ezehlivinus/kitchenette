@@ -1,8 +1,41 @@
 # kitchenette
 Host of Restaurants
 
+## Requirements
+```
+# We will be having a chain of RESTAURANTS.
+
+# Restaurant can have Name, Description, Type (Veg or Non-Veg)
+
+# Each RESTAURANT will have a MENU.
+
+# Menu can have Name and Description.
+
+# MENU will have ITEMS.
+
+# Item can have Name, Description, Image.
+
+
+---
+
+1. We need an API to get all restaurants and the associated menus (Full information)
+
+2. The system should allow a user to register, sign-in and sign-out.
+
+3. The access to the restaurants and menu must be secure and only a registered user should be allowed to access the system.
+
+4. Authentication token like JWT should be used.
+
+5. All APIs should return a proper JSON response.
+
+6. Importance will be given for code quality and convention, inline comments, model designing etc.
+
+7. Database can be MySQL/PostgreSQL.
+
+```
+
 # Usage
-- User postman or insomnia to test the API
+- Use postman or insomnia to test the API
 
 ## Installation
 - []: Clone the repository
